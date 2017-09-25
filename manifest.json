@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "atresplayer-adblockblocker-blocker",
+  "version": "1.0",
+
+  "description": "Blocks atresplayer's adblock blocker",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.atresplayer.com/*"],
+      "js": ["atresplayer-adblockblocker-blocker.js"]
+    }
+  ]
+}
